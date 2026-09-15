@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bagas Wirawan — Portfolio</title>
+<meta name="description" content="Portfolio mahasiswa Teknik Informatika — proyek, keahlian, dan kontak.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- decorative backdrop -->
+<div class="grid-backdrop" aria-hidden="true"></div>
+
+<button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-top">
+    <div class="avatar" aria-hidden="true">BW</div>
+    <h1 class="brand-name">Bagas Wirawan</h1>
+    <p class="brand-role">Mahasiswa Teknik Informatika</p>
+
+    <div class="status-pill">
+      <span class="status-dot"></span> tersedia untuk magang
+    </div>
+
+    <div class="socials">
+      <a href="https://github.com/username" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.39-5.27 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.21.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/username" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a href="https://instagram.com/username" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a5.9 5.9 0 0 0-2.13 1.39A5.9 5.9 0 0 0 .62 4.15c-.3.76-.5 1.63-.56 2.91C0 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.39 2.13.67.67 1.34 1.08 2.13 1.39.76.3 1.63.5 2.91.56C8.33 24 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.13-1.39 5.9 5.9 0 0 0 1.39-2.13c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.39-2.13A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 12 18.16 6.16 6.16 0 0 0 12 5.84Zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.41-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
+      </a>
+      <a href="mailto:bagas.wirawan@example.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1.4 2 8.6 6.53L20.6 6H3.4ZM3 18h18V7.4l-9 6.83L3 7.4V18Z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav" aria-label="Navigasi utama">
+    <a href="#home" class="nav-link active" data-section="home">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9a1 1 0 0 0 1 1h3v-5h4v5h3a1 1 0 0 0 1-1v-9"/></svg>
+      Home
+    </a>
+    <a href="#about" class="nav-link" data-section="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c1.3-3.8 4-5.5 7-5.5s5.7 1.7 7 5.5"/></svg>
+      About
+    </a>
+    <a href="#skills" class="nav-link" data-section="skills">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 9 4 12l4 3"/><path d="M16 9l4 3-4 3"/><path d="M13.5 6.5 10.5 17.5"/></svg>
+      Skills
+    </a>
+    <a href="#projects" class="nav-link" data-section="projects">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="14" rx="1.5"/><path d="M3.5 9h17"/></svg>
+      Projects
+    </a>
+    <a href="#journey" class="nav-link" data-section="journey">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V8a2 2 0 0 1 2-2h5l2 2h7v11"/></svg>
+      Journey
+    </a>
+    <a href="#contact" class="nav-link" data-section="contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5"/><path d="m4 6.5 8 6 8-6"/></svg>
+      Contact
+    </a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <a class="cv-btn" href="cv-bagas-wirawan.pdf" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      Unduh CV
+    </a>
+  </div>
+</aside>
+
+<main class="main">
+
+  <!-- HOME -->
+  <section id="home" class="section hero">
+    <div class="hero-copy">
+      <p class="eyebrow-mono">~/portfolio</p>
+      <h2 class="hero-title">Membangun sesuatu<br>dari <span class="hl">baris kode</span>.</h2>
+      <p class="hero-sub">
+        Saya <strong>Bagas Wirawan</strong>, mahasiswa Teknik Informatika semester 5
+        yang sedang menekuni pengembangan web dan aplikasi. Suka membedah masalah
+        jadi potongan kecil, lalu menyusunnya kembali jadi produk yang jalan.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Lihat proyek</a>
+        <a href="#contact" class="btn btn-ghost">Hubungi saya</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>4</dt><dd>Proyek dikirim</dd></div>
+        <div><dt>3</dt><dd>Bahasa pemrograman inti</dd></div>
+        <div><dt>2026</dt><dd>Target lulus</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">about-me.js</span>
+      </div>
+      <pre class="terminal-body"><code><span class="tk-kw">const</span> <span class="tk-var">bagas</span> = {
+  <span class="tk-key">role</span>: <span class="tk-str">"Informatics Student"</span>,
+  <span class="tk-key">focus</span>: [<span class="tk-str">"Web"</span>, <span class="tk-str">"Backend"</span>, <span class="tk-str">"UI/UX"</span>],
+  <span class="tk-key">status</span>: <span class="typed-status"></span><span class="cursor">|</span>
+};</code></pre>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <p class="section-index">01</p>
+    <h3 class="section-title">Tentang saya</h3>
+    <div class="about-grid">
+      <p class="about-text">
+        Saya mulai belajar pemrograman sejak semester pertama kuliah, berawal dari
+        rasa penasaran soal "bagaimana website bekerja". Dari situ saya jatuh cinta
+        pada proses membangun sesuatu dari nol — mulai dari merancang struktur data,
+        menulis logika di backend, sampai merapikan tampilan di frontend.
+      </p>
+      <p class="about-text">
+        Di luar kelas, saya aktif di organisasi himpunan mahasiswa sebagai staf
+        divisi teknologi, dan sesekali ikut kompetisi hackathon kampus untuk
+        melatih kerja dalam tim dan tenggat waktu yang ketat.
+      </p>
+
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-label">Universitas</span>
+          <span class="fact-value">Universitas Contoh Nusantara</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Jurusan</span>
+          <span class="fact-value">S1 Teknik Informatika</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Semester</span>
+          <span class="fact-value">5 &nbsp;·&nbsp; IPK 3.7</span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Lokasi</span>
+          <span class="fact-value">Makassar, Indonesia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="section-index">02</p>
+    <h3 class="section-title">Keahlian</h3>
+
+    <div class="skills-columns">
+      <div class="skill-group">
+        <h4>Bahasa &amp; Framework</h4>
+        <ul class="skill-list">
+          <li><span>JavaScript</span><div class="bar"><div style="width:85%"></div></div></li>
+          <li><span>Python</span><div class="bar"><div style="width:75%"></div></div></li>
+          <li><span>React</span><div class="bar"><div style="width:70%"></div></div></li>
+          <li><span>PHP / Laravel</span><div class="bar"><div style="width:65%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Basis Data &amp; Tools</h4>
+        <ul class="skill-list">
+          <li><span>MySQL</span><div class="bar"><div style="width:80%"></div></div></li>
+          <li><span>Git &amp; GitHub</span><div class="bar"><div style="width:85%"></div></div></li>
+          <li><span>MongoDB</span><div class="bar"><div style="width:55%"></div></div></li>
+          <li><span>Docker</span><div class="bar"><div style="width:45%"></div></div></li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Sedang dipelajari</h4>
+        <div class="tag-cloud">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Golang</span>
+          <span class="tag">Cloud / AWS</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <p class="section-index">03</p>
+    <h3 class="section-title">Proyek pilihan</h3>
+
+    <div class="project-list">
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">web app</span>
+          <span class="project-year">2026</span>
+        </div>
+        <h4>SIAKAD Ringkas</h4>
+        <p>Dashboard akademik sederhana untuk mahasiswa memantau jadwal, nilai,
+          dan absensi dalam satu tampilan. Dibangun sebagai proyek mata kuliah
+          Rekayasa Perangkat Lunak.</p>
+        <ul class="project-stack">
+          <li>React</li><li>Laravel</li><li>MySQL</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Kode sumber →</a>
+          <a href="#">Demo langsung →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">mobile</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h4>Catatan Kos</h4>
+        <p>Aplikasi pencatatan keuangan anak kos dengan pengingat tagihan bulanan
+          dan ringkasan pengeluaran mingguan.</p>
+        <ul class="project-stack">
+          <li>Flutter</li><li>Firebase</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Kode sumber →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">data</span>
+          <span class="project-year">2025</span>
+        </div>
+        <h4>Prediksi Nilai Ujian</h4>
+        <p>Model machine learning sederhana untuk memprediksi kelulusan mata
+          kuliah berdasarkan pola kehadiran dan tugas mahasiswa.</p>
+        <ul class="project-stack">
+          <li>Python</li><li>Pandas</li><li>Scikit-learn</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Kode sumber →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-meta">
+          <span class="project-tag">website</span>
+          <span class="project-year">2024</span>
+        </div>
+        <h4>UMKM Digital</h4>
+        <p>Website katalog produk untuk UMKM lokal lengkap dengan sistem
+          pemesanan via WhatsApp, dibuat untuk proyek pengabdian masyarakat.</p>
+        <ul class="project-stack">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <div class="project-links">
+          <a href="#">Kode sumber →</a>
+          <a href="#">Demo langsung →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey" class="section">
+    <p class="section-index">04</p>
+    <h3 class="section-title">Perjalanan</h3>
+
+    <ol class="timeline">
+      <li>
+        <span class="timeline-year">2023 — sekarang</span>
+        <h4>S1 Teknik Informatika</h4>
+        <p>Universitas Contoh Nusantara. Fokus pada rekayasa perangkat lunak dan
+          pengembangan aplikasi web.</p>
+      </li>
+      <li>
+        <span class="timeline-year">2024</span>
+        <h4>Staf Divisi Teknologi, Himpunan Mahasiswa</h4>
+        <p>Mengelola sistem informasi internal himpunan dan mendampingi
+          pelatihan coding untuk mahasiswa baru.</p>
+      </li>
+      <li>
+        <span class="timeline-year">2025</span>
+        <h4>Peserta Hackathon Kampus</h4>
+        <p>Tim finalis dengan proyek "Catatan Kos", aplikasi manajemen
+          keuangan sederhana untuk mahasiswa perantauan.</p>
+      </li>
+      <li>
+        <span class="timeline-year">2026</span>
+        <h4>Target: Magang Software Engineer</h4>
+        <p>Sedang mencari kesempatan magang untuk memperdalam praktik
+          pengembangan perangkat lunak di industri.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <p class="section-index">05</p>
+    <h3 class="section-title">Mari terhubung</h3>
+    <p class="contact-intro">
+      Terbuka untuk peluang magang, proyek freelance, atau sekadar diskusi
+      soal teknologi. Kabari saya lewat email atau formulir di bawah ini.
+    </p>
+
+    <div class="contact-grid">
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nama
+          <input type="text" name="name" required placeholder="Nama kamu">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="kamu@email.com">
+        </label>
+        <label>
+          Pesan
+          <textarea name="message" rows="4" required placeholder="Ceritakan kebutuhan kamu..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Kirim pesan</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="contact-side">
+        <div class="contact-item">
+          <span class="fact-label">Email</span>
+          <a href="mailto:bagas.wirawan@example.com">bagas.wirawan@example.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="fact-label">WhatsApp</span>
+          <a href="https://wa.me/6281234567890">+62 812-3456-7890</a>
+        </div>
+        <div class="contact-item">
+          <span class="fact-label">Lokasi</span>
+          <span>Makassar, Indonesia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Bagas Wirawan. Dibangun dengan HTML, CSS &amp; JavaScript.</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
